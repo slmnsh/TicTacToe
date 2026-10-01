@@ -1,7 +1,7 @@
 var express = require('express');
 var shortid = require('shortid')
 var router = express.Router();
-shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_-')
+shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var newId = shortid.generate()
